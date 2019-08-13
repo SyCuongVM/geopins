@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server",
+    "client": "npm start --prefix ../web",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "CuongVM",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.7.0",
+    "dotenv": "^8.0.0",
+    "google-auth-library": "^4.2.5",
+    "graphql": "^14.4.2",
+    "mongoose": "^5.6.4"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.1",
+    "nodemon": "^1.19.1"
+  }
+}
